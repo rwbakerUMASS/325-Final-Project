@@ -10,7 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ILost">
         <activity
+            android:name=".NewPosting"
+            android:exported="false" />
+        <activity
             android:name=".LostItems"
+            android:exported="false" />
+        <activity
+            android:name=".PostingPage"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

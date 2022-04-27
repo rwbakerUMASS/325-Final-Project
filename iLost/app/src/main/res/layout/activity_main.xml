@@ -6,6 +6,19 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/newPosting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="11"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="28dp"
+        android:clickable="true"
+        android:contentDescription="New Post"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
@@ -33,6 +46,7 @@
     </LinearLayout>
 
     <GridLayout
+        android:id="@+id/grid"
         android:layout_width="367dp"
         android:layout_height="490dp"
         android:layout_margin="10dp"
@@ -49,7 +63,7 @@
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
             android:layout_margin="10dp"
-            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+            tools:srcCompat="@drawable/airpods" />
 
         <ImageView
             android:id="@+id/image2"
@@ -58,7 +72,7 @@
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
             android:layout_margin="10dp"
-            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+            tools:srcCompat="@drawable/keys" />
 
         <TextView
             android:id="@+id/title1"
@@ -66,7 +80,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="fill"
             android:layout_margin="10dp"
-            android:text="TextView"
+            android:text="Airpod Pros"
             android:textAlignment="center" />
 
         <TextView
@@ -75,7 +89,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="fill"
             android:layout_margin="10dp"
-            android:text="TextView"
+            android:text="Keys"
             android:textAlignment="center" />
 
         <ImageView
@@ -85,7 +99,7 @@
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
             android:layout_margin="10dp"
-            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+            tools:srcCompat="@drawable/wallet" />
 
         <ImageView
             android:id="@+id/image4"
@@ -94,7 +108,7 @@
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
             android:layout_margin="10dp"
-            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+            tools:srcCompat="@drawable/laptop1" />
 
         <TextView
             android:id="@+id/title3"
@@ -102,7 +116,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="fill"
             android:layout_margin="10dp"
-            android:text="TextView"
+            android:text="Wallet"
             android:textAlignment="center" />
 
         <TextView
@@ -111,7 +125,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="fill"
             android:layout_margin="10dp"
-            android:text="TextView"
+            android:text="Lenovo Laptop"
             android:textAlignment="center" />
 
         <ImageView
@@ -121,7 +135,7 @@
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
             android:layout_margin="10dp"
-            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+            tools:srcCompat="@drawable/laptop2" />
 
         <ImageView
             android:id="@+id/image6"
@@ -138,7 +152,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="fill"
             android:layout_margin="10dp"
-            android:text="TextView"
+            android:text="Dell Laptop"
             android:textAlignment="center" />
 
         <TextView
@@ -147,7 +161,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="fill"
             android:layout_margin="10dp"
-            android:text="TextView"
+            android:text=""
             android:textAlignment="center" />
 
 

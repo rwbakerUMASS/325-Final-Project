@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/clear"
+        android:title="Clear Filters"/>
+    <item android:id="@+id/tags"
+        android:title="Tags">
+        <menu xmlns:android="http://schemas.android.com/apk/res/android">
+            <item android:id="@+id/keys"
+                android:title="Keys"/>
+            <item android:id="@+id/books"
+                android:title="Books"/>
+            <item android:id="@+id/laptop"
+                android:title="Laptops"/>
+        </menu>
+    </item>
+    <item android:id="@+id/sort"
+        android:title="Sort">
+        <menu xmlns:android="http://schemas.android.com/apk/res/android">
+            <item android:id="@+id/time"
+                android:title="Time"/>
+            <item android:id="@+id/location"
+                android:title="Location"/>
+        </menu>
+    </item>
+</menu>
