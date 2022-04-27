@@ -10,50 +10,49 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class LostItems extends AppCompatActivity {
 
     ImageView options;
     ImageView account;
     ImageView search;
-    Button lost;
-
+    Button found;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_lost_items);
+
         createCustomActionBar();
 
         options.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MainActivity.this, "Options", Toast.LENGTH_SHORT).show();
+                Toast.makeText(LostItems.this, "Options", Toast.LENGTH_SHORT).show();
             }
         });
 
         account.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MainActivity.this, "Account", Toast.LENGTH_SHORT).show();
+                Toast.makeText(LostItems.this, "Account", Toast.LENGTH_SHORT).show();
             }
         });
 
         search.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MainActivity.this, "Search", Toast.LENGTH_SHORT).show();
+                Toast.makeText(LostItems.this, "Search", Toast.LENGTH_SHORT).show();
             }
         });
-        lost=findViewById(R.id.lost_button);
-        lost.setOnClickListener(new View.OnClickListener() {
+        found=findViewById(R.id.found_button);
+        found.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, LostItems.class));
+                startActivity(new Intent(LostItems.this, MainActivity.class));
             }
         });
 
     }
-
     protected void createCustomActionBar(){
         getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
         getSupportActionBar().setDisplayShowCustomEnabled(true);
